@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterviewPrep AI - Job Interview Preparation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="app-container nav-container">
+      <div class="logo">
+        <i class="fas fa-brain"></i> InterviewPrep AI
+      </div>
+      <ul class="nav-links">
+        <li><a href="#login" data-page="login">Login</a></li>
+
+        <li><a href="#home" class="active" data-page="home">Home</a></li>
+        <li><a href="#practice" data-page="practice">Practice</a></li>
+        <li><a href="#resources" data-page="resources">Resources</a></li>
+        <li><a href="#contact" data-page="contact">Contact Us</a></li>
+      </ul>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="app-container">
+
+
+    <!-- Login Page -->
+<section id="login" class="page">
+  <div class="login-wrapper">
+    <div class="login-container">
+      <h2 class="login-heading">Login</h2>
+      <p class="subheading">Access your InterviewPrep AI account</p>
+
+      <div class="form-group">
+        <label for="login-email" class="form-label">Email</label>
+        <input type="email" id="login-email" class="form-input" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="login-password" class="form-label">Password</label>
+        <input type="password" id="login-password" class="form-input" placeholder="Enter your password">
+      </div>
+
+      <!-- Message box for error/success -->
+      <p id="login-message"></p>
+
+      <button class="btn" id="login-btn">Login</button>
+
+      <p class="signup-text">
+        Don't have an account? <a href="#" id="signup-link">Create one</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+      <div class="hero">
+        <h1 id="hero-title">Ace Your Next Job Interview</h1>
+        <p id="hero-text">Practice with AI-powered interview simulations, get instant feedback, and track your progress over time.</p>
+        <div class="hero-buttons">
+          <a href="#practice" class="btn" data-page="practice" id="fetch-btn">Start Practicing</a>
+          <a href="#resources" class="btn btn-outline" data-page="resources">Explore Resources</a>
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature-card" id="feature-1">
+          <div class="feature-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3 class="feature-title">AI-Powered Practice</h3>
+          <p class="feature-text">Get realistic interview questions and AI-generated feedback on your responses.</p>
+        </div>
+        <div class="feature-card" id="feature-2">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="feature-title">Track Progress</h3>
+          <p class="feature-text">Monitor your improvement over time with detailed analytics and performance metrics.</p>
+        </div>
+        <div class="feature-card" id="feature-3">
+          <div class="feature-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3 class="feature-title">Save & Review</h3>
+          <p class="feature-text">Keep all your practice sessions organized and revisit them anytime for review.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice Page -->
+    <section id="practice" class="page">
+  <h2>Practice Interview Questions</h2>
+  <p class="subheading">Select a category and start practicing with AI-generated questions</p>
+  <div class="practice-container">
+    <div class="category-selector">
+  <button class="category-btn active" data-field="frontend">Frontend</button>
+  <button class="category-btn" data-field="backend">Backend</button>
+  <button class="category-btn" data-field="hr">HR</button>
+</div>
+    <div class="interview-interface">
+      <div class="question-display">
+        <h3 id="question-text">Ready to start your practice? Select a category above.</h3>
+      </div>
+      <div class="timer" id="timer">02:00</div>
+      <textarea class="response-input" id="response-input" placeholder="Type your response here..."></textarea>
+      <button class="btn" id="start-btn">Start Practice</button>
+      <button class="btn" id="submit-btn" style="display: none;">Submit Response</button>
+      <button class="btn" id="next-btn" style="display: none;">Next Question</button>
+      <div class="loader" id="loader"></div>
+      <div class="feedback-area" id="feedback-area">
+        <h4>AI Feedback:</h4>
+        <p id="feedback-text"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Past Notes Page 
+    <section id="notes" class="page">
+      <h2>Your Past Interview Notes</h2>
+      <p class="subheading">Review your previous practice sessions and feedback</p>
+      <div class="notes-container" id="notes-container">
+        <div class="empty-state" id="empty-notes">
+          <i class="fas fa-sticky-note"></i>
+          <h3>No notes yet</h3>
+          <p>Your practice sessions and feedback will appear here.</p>
+        </div>
+      </div>
+    </section>-->
+
+    <!-- Resources Page -->
+    <section id="resources" class="page">
+  <h2>Interview Preparation Resources</h2>
+  <p class="subheading">Helpful materials to boost your interview skills</p>
+
+  <div class="resources-grid">
+    <!-- Interview Question Bank -->
+    <div class="resource-card">
+      <div class="resource-img">
+        <i class="fas fa-book"></i>
+      </div>
+      <div class="resource-content">
+        <h3>Interview Question Bank</h3>
+        <p>Comprehensive list of common interview questions with expert answers.</p>
+        <a href="https://www.themuse.com/advice/interview-questions-and-answers" 
+           target="_blank" 
+           style="display:inline-block; margin:5px 0; padding:8px 14px; background:#007bff; color:#fff; border-radius:6px; text-decoration:none; font-size:14px;">
+          Explore Notes <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Video Tutorials -->
+    <div class="resource-card">
+      <div class="resource-img">
+        <i class="fas fa-video"></i>
+      </div>
+      <div class="resource-content">
+        <h3>Video Tutorials</h3>
+        <p>Watch and learn from interview simulations and expert tips.</p>
+
+        <!-- Watch Now Button -->
+        <button id="show-videos-btn" 
+                style="display:inline-block; margin:5px 0; padding:8px 14px; background:#28a745; color:#fff; border-radius:6px; border:none; cursor:pointer; font-size:14px;">
+          Watch Now <i class="fas fa-arrow-down"></i>
+        </button>
+
+        <!-- Hidden Videos -->
+        <div id="videos-container" style="display:none; margin-top:10px;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/icudf_w_pqU?si=QnWttPJI3UvzGPdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/eyI5WkbSckI?si=_ib9fYVCUmxhUiLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/we7ba0slWrc?si=neSs8vt1cAV9zrHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Templates -->
+    <div class="resource-card">
+      <div class="resource-img">
+        <i class="fas fa-file-pdf"></i>
+      </div>
+      <div class="resource-content">
+        <h3>Resume Templates</h3>
+        <p>Professional templates to create a standout resume.</p>
+        <a href="https://www.canva.com/resumes/templates/" 
+           target="_blank" 
+           style="display:inline-block; margin:5px 5px 5px 0; padding:8px 14px; background:#dc3545; color:#fff; border-radius:6px; text-decoration:none; font-size:14px;">
+          Template 1 <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="https://zety.com/resume-templates" 
+           target="_blank" 
+           style="display:inline-block; margin:5px 5px 5px 0; padding:8px 14px; background:#dc3545; color:#fff; border-radius:6px; text-decoration:none; font-size:14px;">
+          Template 2 <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="https://novoresume.com/resume-templates" 
+           target="_blank" 
+           style="display:inline-block; margin:5px 0; padding:8px 14px; background:#dc3545; color:#fff; border-radius:6px; text-decoration:none; font-size:14px;">
+          Template 3 <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript to toggle videos -->
+<script>
+  const showBtn = document.getElementById('show-videos-btn');
+  const videosContainer = document.getElementById('videos-container');
+
+  showBtn.addEventListener('click', () => {
+    if (videosContainer.style.display === "none") {
+      videosContainer.style.display = "block";
+      showBtn.innerHTML = 'Hide Videos <i class="fas fa-arrow-up"></i>';
+    } else {
+      videosContainer.style.display = "none";
+      showBtn.innerHTML = 'Watch Now <i class="fas fa-arrow-down"></i>';
+    }
+  });
+</script>
+
+
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+      <h2>Contact Us</h2>
+      <p class="subheading">We'd love to hear from you</p>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>PAKISTAN</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>123@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>1234567890</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Send us a Message</h3>
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" class="form-input" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" id="email" class="form-input" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-textarea" placeholder="Type your message here..."></textarea>
+          </div>
+          <button class="btn" id="send-message-btn">Send Message</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+  <div class="app-container">
+    <div class="footer-content">
+      <div class="footer-about">
+        <div class="footer-logo">
+          <i class="fas fa-brain"></i> InterviewPrep AI
+        </div>
+        <p>Helping job seekers ace their interviews with AI-powered practice and feedback.</p>
+        <div class="social-links">
+          <!-- Facebook placeholder -->
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <!-- LinkedIn real link -->
+          <a href="https://www.linkedin.com/in/javeria-sajid-365924350/"
+             target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <!-- Instagram placeholder -->
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home" data-page="home">Home</a></li>
+          <li><a href="#practice" data-page="practice">Practice</a></li>
+          <li><a href="#resources" data-page="resources">Resources</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#contact" data-page="contact">Contact Us</a></li>
+          <div>
+          <li>
+  <p style=" text-align:center; font-size:1.1rem; font-weight:600; letter-spacing:1px; color:#4a4a4a; margin-top:10px; font-family:'Poppins', sans-serif;">
+    Developed by <span style="color:#6C63FF;">JAVERIA SAJID</span>
+  </p>
+</li>
+</div>
+
+        </ul>
+      </div>
+    </div>
+    
+
+    <div class="copyright">
+      <p>&copy; 2026 InterviewPrep AI. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="scrip1.js"></script>
+</body>
+</html>

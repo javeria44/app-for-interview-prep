@@ -1,0 +1,188 @@
+{
+  "frontend": [
+   {
+  "question": "Which HTML attribute is used to provide an image source?",
+  "options": ["src", "href", "alt", "title"],
+  "correctAnswer": "src",
+  "explanation": "The 'src' attribute in the <img> tag specifies the path to the image file."
+},
+    {
+      "question": "Which CSS property is used to change text color?",
+      "options": ["text-style", "color", "font-color", "text-color"],
+      "correctAnswer": "color",
+      "explanation": "The CSS 'color' property sets the text color of an element."
+    },
+    {
+      "question": "What does DOM stand for?",
+      "options": ["Document Object Model", "Data Object Management", "Display Object Mode", "Document Oriented Module"],
+      "correctAnswer": "Document Object Model",
+      "explanation": "DOM is a programming interface for HTML and XML documents."
+    },
+    {
+      "question": "Which of these is NOT a valid CSS unit?",
+      "options": ["px", "em", "pt", "hr"],
+      "correctAnswer": "hr",
+      "explanation": "'hr' is not a CSS unit. It's an HTML tag for horizontal rule."
+    },
+    {
+      "question": "Which JavaScript method is used to select an element by ID?",
+      "options": ["querySelector()", "getElementsByClassName()", "getElementById()", "getElementsByTagName()"],
+      "correctAnswer": "getElementById()",
+      "explanation": "getElementById() returns a single element with the specified ID."
+    },
+    {
+      "question": "Which HTML attribute specifies an image source?",
+      "options": ["alt", "src", "href", "link"],
+      "correctAnswer": "src",
+      "explanation": "The 'src' attribute defines the path to the image file."
+    },
+    {
+      "question": "Which of these is NOT a JavaScript framework?",
+      "options": ["React", "Vue", "Laravel", "Angular"],
+      "correctAnswer": "Laravel",
+      "explanation": "Laravel is a PHP framework, not a JavaScript framework."
+    },
+    {
+      "question": "Which CSS property controls the text size?",
+      "options": ["text-style", "font-style", "text-size", "font-size"],
+      "correctAnswer": "font-size",
+      "explanation": "The 'font-size' property sets the size of the text."
+    },
+    {
+      "question": "Which tag is used to create a hyperlink in HTML?",
+      "options": ["<link>", "<href>", "<a>", "<h>"],
+      "correctAnswer": "<a>",
+      "explanation": "The <a> tag defines a hyperlink."
+    },
+    {
+      "question": "What is the correct way to comment in HTML?",
+      "options": ["// comment", "<!-- comment -->", "/* comment */", "# comment"],
+      "correctAnswer": "<!-- comment -->",
+      "explanation": "HTML comments use <!-- and -->."
+    }
+  ],
+  "backend": [
+    {
+      "question": "Which database is document-oriented?",
+      "options": ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
+      "correctAnswer": "MongoDB",
+      "explanation": "MongoDB is a NoSQL database that stores data in JSON-like documents."
+    },
+    {
+      "question": "Which HTTP method is used to update a resource?",
+      "options": ["GET", "POST", "PUT", "DELETE"],
+      "correctAnswer": "PUT",
+      "explanation": "PUT is used to update an existing resource on the server."
+    },
+    {
+      "question": "Which language runs inside Node.js?",
+      "options": ["Java", "Python", "JavaScript", "C#"],
+      "correctAnswer": "JavaScript",
+      "explanation": "Node.js executes JavaScript code on the server side."
+    },
+    {
+      "question": "Which of these is NOT a backend language?",
+      "options": ["PHP", "Ruby", "Python", "CSS"],
+      "correctAnswer": "CSS",
+      "explanation": "CSS is a styling language, not a backend programming language."
+    },
+    {
+      "question": "Which SQL keyword is used to sort results?",
+      "options": ["ORDER BY", "GROUP BY", "SORT", "FILTER"],
+      "correctAnswer": "ORDER BY",
+      "explanation": "ORDER BY is used to sort result-set in ascending or descending order."
+    },
+    {
+      "question": "What does REST stand for?",
+      "options": ["Representational State Transfer", "Remote Execution Service Tool", "Resource Event Streaming", "Reliable Server Transfer"],
+      "correctAnswer": "Representational State Transfer",
+      "explanation": "REST is an architectural style for building scalable web services."
+    },
+    {
+      "question": "Which protocol is used for secure communication?",
+      "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
+      "correctAnswer": "HTTPS",
+      "explanation": "HTTPS encrypts data for secure communication over the web."
+    },
+    {
+      "question": "Which of these is a popular backend framework?",
+      "options": ["Express.js", "Bootstrap", "Tailwind CSS", "jQuery"],
+      "correctAnswer": "Express.js",
+      "explanation": "Express.js is a Node.js web application framework."
+    },
+    {
+      "question": "Which database uses SQL?",
+      "options": ["MongoDB", "Redis", "MySQL", "Cassandra"],
+      "correctAnswer": "MySQL",
+      "explanation": "MySQL is a relational database that uses SQL."
+    },
+    {
+      "question": "What is the default port for HTTP?",
+      "options": ["8080", "22", "443", "80"],
+      "correctAnswer": "80",
+      "explanation": "Port 80 is the default for HTTP traffic."
+    }
+  ],
+  "hr": [
+    {
+      "question": "Which is an example of a behavioral question?",
+      "options": ["What is polymorphism?", "Describe a time you resolved a conflict.", "Explain REST API.", "What is CSS?"],
+      "correctAnswer": "Describe a time you resolved a conflict.",
+      "explanation": "Behavioral questions focus on past experiences and actions."
+    },
+    {
+      "question": "Which of these shows good teamwork?",
+      "options": ["Ignoring teammate's input", "Actively collaborating and communicating", "Working alone silently", "Not sharing updates"],
+      "correctAnswer": "Actively collaborating and communicating",
+      "explanation": "Good teamwork involves communication and collaboration."
+    },
+    {
+      "question": "What is the purpose of HR interview?",
+      "options": ["Technical evaluation", "Behavioral assessment", "Performance testing", "Code debugging"],
+      "correctAnswer": "Behavioral assessment",
+      "explanation": "HR interviews check personality, communication, and cultural fit."
+    },
+    {
+      "question": "Which of these is a soft skill?",
+      "options": ["JavaScript", "Communication", "SQL", "Node.js"],
+      "correctAnswer": "Communication",
+      "explanation": "Soft skills include communication, teamwork, adaptability, etc."
+    },
+    {
+      "question": "Which is a good way to answer 'Tell me about yourself'?",
+      "options": ["Talking about childhood", "Explaining hobbies in detail", "Brief intro + skills + experience summary", "Talking about salary expectations"],
+      "correctAnswer": "Brief intro + skills + experience summary",
+      "explanation": "Best practice is to be professional, concise and relevant."
+    },
+    {
+      "question": "Which question is commonly asked in HR round?",
+      "options": ["Explain TCP handshake", "Tell me your strengths and weaknesses", "Describe MVC architecture", "Explain recursion"],
+      "correctAnswer": "Tell me your strengths and weaknesses",
+      "explanation": "HR rounds focus on personality and behavior."
+    },
+    {
+      "question": "What should you do if you don't know an answer?",
+      "options": ["Stay silent", "Guess randomly", "Politely admit and express willingness to learn", "Leave the interview"],
+      "correctAnswer": "Politely admit and express willingness to learn",
+      "explanation": "Honesty and willingness to learn leaves a good impression."
+    },
+    {
+      "question": "What is a good body language during interview?",
+      "options": ["Slouching", "Looking distracted", "Maintaining eye contact and sitting straight", "Crossing arms"],
+      "correctAnswer": "Maintaining eye contact and sitting straight",
+      "explanation": "Confident posture and eye contact create positive impression."
+    },
+    {
+      "question": "How should you handle salary question?",
+      "options": ["Demand highest salary", "Refuse to answer", "Give a reasonable range or ask about company budget", "Ignore the question"],
+      "correctAnswer": "Give a reasonable range or ask about company budget",
+      "explanation": "Professional approach is to discuss reasonably and stay flexible."
+    },
+    {
+      "question": "What is the main focus of HR department?",
+      "options": ["Coding", "Employee management & welfare", "Server maintenance", "UI/UX design"],
+      "correctAnswer": "Employee management & welfare",
+      "explanation": "HR focuses on employee relations, hiring, and company culture."
+    }
+  ]
+}
